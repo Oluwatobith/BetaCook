@@ -46,6 +46,7 @@ nav a {
     color: rgb(12, 6, 6);
     font-size: 60px;
     margin-top: 0px;
+    top: 40px;
     font-family: 'Bad Script', cursive;
     font-weight: bolder;
     font-variant: small-caps;
@@ -135,6 +136,18 @@ footer {
 
 @media (max-width: 500px) {
     .product-card {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 270px) {
+    .product-card {
+        width: 100%;
+    }
+
+    header {
         width: 100%;
     }
 }
