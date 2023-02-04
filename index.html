@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bad+Script&family=Darker+Grotesque&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="javascript.js"></script>
     <title>Beta Cook</title>
   </head>
   <body>
@@ -14,7 +15,6 @@
       <h1>BetaCook</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#"><b onclick="myFunction()">Click Me (Cart)</b></a></li>
         </ul>
@@ -36,7 +36,7 @@
         </div>
         <div class="product-card">
           <img src="./images/snacks.png" alt="product2" />
-          <h3>Snacks</h3>
+          <h3>Crackers</h3>
           <p>$20</p>
           <button onclick="showAlert()">Add to Cart</button>
           <div class="center-alert" id="alert">
@@ -169,26 +169,5 @@
     <footer>
       <p>Copyright &copy; 2023 My E-commerce Website</p>
     </footer>
-
-
-    <script>
-        function myFunction() {
-          let text;
-          let person = prompt("Please, enter your email");
-          if (person == null || person == "") {
-            text = "User cancelled the prompt.";
-          } else {
-            text = "Hello " + person + "! How are you today?";
-          }
-          document.getElementById("button").innerHTML = text;
-        }
-
-                function showAlert() {
-            document.getElementById("alert").style.display = "block";
-            }
-            function hideAlert() {
-            document.getElementById("alert").style.display = "none";
-            }
-        </script>
   </body>
 </html>
