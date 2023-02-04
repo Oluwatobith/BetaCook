@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(140, 185, 185, 0.342);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.center-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: #16b15ca8;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    display: none;
+  }
+
+  header h1 {
+    color: rgb(12, 6, 6);
+    font-size: 60px;
+    margin-top: 0px;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    font-variant: small-caps;
+  }
+
+  main {
+    padding-top: 0;
+    background-color: rgba(185, 156, 156, 0.644);
+  }
+  
+  main h2 {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    margin-bottom: 0;
+  }
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 30%;
+    margin: 1rem;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border: solid black;
+    border-radius: 5px;
+}
+
+.add-to-cart-button,
+.view-details-button,
+.back-button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: rgb(204, 83, 83);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shopping-cart {
+    padding: 1rem;
+}
+
+.shopping-cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-cart th,
+.shopping-cart td {
+    border: 1px solid lightgray;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.shopping-cart th {
+    background-color: lightgray;
+}
+
+.shopping-cart tbody tr:nth-child(even) {
+    background-color: lightyellow;
+}
+
+.shopping-cart .total {
+    text-align: right;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .product-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 500px) {
+    .product-card {
+        width: 100%;
+    }
+}

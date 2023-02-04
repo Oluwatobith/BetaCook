@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bad+Script&family=Darker+Grotesque&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Beta Cook</title>
+  </head>
+  <body>
+    <header>
+      <h1>BetaCook</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#"><b onclick="myFunction()">Click Me (Cart)</b></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Snacks</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="./images/Beef-Burger.jpg" alt="product1" />
+          <h3>Burger</h3>
+          <p>$10</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="./images/snacks.png" alt="product2" />
+          <h3>Snacks</h3>
+          <p>$20</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="./images/spring-rolls.png" alt="product3" />
+          <h3>Pie & Rolls</h3>
+          <p>$15</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+      </div>
+
+      <h2>Drinks</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="./images/alcohol.png" alt="product1" />
+          <h3>Alcohol & Wine</h3>
+          <p>$10</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="./images/All-soft-drink.png" alt="product2" />
+          <h3>Soft Drink & Soda</h3>
+          <p>$20</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="./images/eva.png" alt="product3" />
+          <h3>Bottle Water</h3>
+          <p>$15</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+      </div>
+
+      <h2>Foods</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="./images/jollof&fried.png" alt="product1" />
+          <h3>Rice</h3>
+          <p>$10</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="./images/fish-babicue.png" alt="product2" />
+          <h3>Babicue</h3>
+          <p>$20</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="./images/beef-sauce.png" alt="product3" />
+          <h3>Sauce</h3>
+          <p>$15</p>
+          <button onclick="showAlert()">Add to Cart</button>
+          <div class="center-alert" id="alert">
+            <p>Your Order has been added to Cart.</p>
+            <button onclick="hideAlert()">Close</button>
+          </div>
+          <button class="view-details-button">View Details</button>
+        </div>
+      </div>
+
+      <div class="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Average Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Snacks</td>
+              <td>$10</td>
+              <td>1</td>
+              <td>$10</td>
+            </tr>
+            <tr>
+              <td>Drinks</td>
+              <td>$20</td>
+              <td>2</td>
+              <td>$40</td>
+            </tr>
+            <tr>
+              <td>Foods</td>
+              <td>$15</td>
+              <td>3</td>
+              <td>$45</td
+              </tr>
+          </tbody>
+        </table>
+
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 My E-commerce Website</p>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+          let text;
+          let person = prompt("Please, enter your email");
+          if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+          } else {
+            text = "Hello " + person + "! How are you today?";
+          }
+          document.getElementById("button").innerHTML = text;
+        }
+
+                function showAlert() {
+            document.getElementById("alert").style.display = "block";
+            }
+            function hideAlert() {
+            document.getElementById("alert").style.display = "none";
+            }
+        </script>
+  </body>
+</html>
