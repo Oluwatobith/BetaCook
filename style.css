@@ -137,17 +137,11 @@ footer {
 @media (max-width: 500px) {
     .product-card {
         width: 100%;
-    }
-
-    
+    }  
 }
 
 @media (max-width: 270px) {
     .product-card {
-        width: 100%;
-    }
-
-    header {
         width: 100%;
     }
 }
